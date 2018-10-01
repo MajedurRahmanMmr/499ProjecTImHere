@@ -26,4 +26,7 @@
     <string name="send_request">"অনুরোধ পাঠান "</string>
     <string name="todo" translatable="false">করণীয়</string>
     <string name="i_am_here" translatable="false">"আমি এখানে "</string>
+    <string name="confirm">" নিশ্চিত করা "</string>
+    <string name="set_radius">"রেডিয়াস সেট করুন "</string>
+    <string name="comminity">জনসাধারণ</string>
 </resources>

@@ -39,7 +39,7 @@
                 android:layout_below="@+id/nameRequest"
                 android:layout_marginBottom="5dp"
                 android:singleLine="true"
-                android:text="Unknown"
+                android:text="@string/unknown"
                 android:visibility="invisible" />
 
             <Button
@@ -50,7 +50,7 @@
                 android:layout_below="@+id/nameRelation"
                 android:layout_marginRight="5dp"
                 android:background="#00e676"
-                android:text="Confirm"
+                android:text="@string/confirm"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textStyle="bold"
@@ -79,7 +79,7 @@
                 android:background="@color/colorPrimary"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
-                android:text="Set Radius"
+                android:text="@string/set_radius"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textStyle="bold"
