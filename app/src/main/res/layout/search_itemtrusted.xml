@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:id="@+id/nameRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/profileImage"
+                android:layout_toRightOf="@+id/profileImage"
+                android:text=""
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/nameRelation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nameRequest"
+                android:layout_below="@+id/nameRequest"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:text="Unknown"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/requestconfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/nameRequest"
+                android:layout_below="@+id/nameRelation"
+                android:layout_marginRight="5dp"
+                android:background="#00e676"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/requestDecline"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/nameRequest"
+                android:layout_below="@+id/nameRelation"
+                android:background="#ff1744"
+                android:text="@string/decline"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/userRadiusSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignTop="@id/requestDecline"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/requestDecline"
+                android:background="@color/colorPrimary"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Set Radius"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/requestsend"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/nameRequest"
+                android:layout_below="@+id/nameRelation"
+                android:layout_marginRight="5dp"
+                android:background="#00e676"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/send_request"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/viewCurrentLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_location_on_black_24dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

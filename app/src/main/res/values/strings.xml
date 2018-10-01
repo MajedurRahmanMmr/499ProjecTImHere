@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">I am Here</string>
+    <string name="todo">TODO</string>
+    <string name="currentPosition">Current Position</string>
+    <string name="loginUnsuccessful">Login Unsuccessful</string>
+    <string name="updatedSuccessfully">Updated Successfully</string>
+    <string name="requestError">Request  Error</string>
+    <string name="locationRadiusUpdated">Location Radius Updated</string>
+    <string name="unknown">Unknown</string>
+    <string name="remove">Remove</string>
+    <string name="add_trusted_contact">Add Trusted Contact</string>
+    <string name="search">Search</string>
+    <string name="i_am_here">I am Here</string>
+    <string name="radius_select">Radius Select</string>
+    <string name="trusted_contact">Trusted Contact</string>
+    <string name="trustee_contact">Trustee Contact</string>
+    <string name="current_position">Current Position</string>
+    <string name="home_page">Home Page</string>
+    <string name="health">Health</string>
+    <string name="community">Community</string>
+    <string name="select_you_position_radius">Select You Position Radius</string>
+    <string name="exact_radius">Exact Radius</string>
+    <string name="few_board_radius">Few Board Radius</string>
+    <string name="area_basis_radius">Area Basis Radius</string>
+    <string name="city_basis_radius">City Basis Radius</string>
+    <string name="decline">Decline</string>
+    <string name="send_request">Send Request</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"আমি এখানে "</string>
+    <string name="currentPosition">"বর্তমান অবস্থান "</string>
+    <string name="loginUnsuccessful">"লগইন ব্যর্থ হয়েছে "</string>
+    <string name="updatedSuccessfully">"সফলভাবে আপডেট করা হয়েছে "</string>
+    <string name="requestError">অনুরোধ ত্রুটি</string>
+    <string name="locationRadiusUpdated">"অবস্থান আপডেট করা হয়েছে "</string>
+    <string name="unknown">অপরিচিত</string>
+    <string name="remove">অপসারণ</string>
+    <string name="add_trusted_contact">"বিশ্বস্ত যোগাযোগ যুক্ত করুন "</string>
+    <string name="search">অনুসন্ধান</string>
+    <string name="radius_select">"ব্যাসার্ধ নির্বাচন করুন "</string>
+    <string name="trusted_contact">"বিশ্বস্ত যোগাযোগ "</string>
+    <string name="trustee_contact">"ট্রাস্টি যোগাযোগ "</string>
+    <string name="current_position">"বর্তমান অবস্থান "</string>
+    <string name="home_page">হোম পেজ</string>
+    <string name="health">"স্বাস্থ্য "</string>
+    <string name="community">জনসাধারণ</string>
+    <string name="select_you_position_radius">"আপনি অবস্থান ব্যাসার্ধ নির্বাচন করুন "</string>
+    <string name="exact_radius">"সঠিক ব্যাসার্ধ "</string>
+    <string name="few_board_radius">"কয়েক বোর্ড ব্যাসার্ধ "</string>
+    <string name="area_basis_radius">"এলাকা বেসিস ব্যাসার্ধ "</string>
+    <string name="city_basis_radius">"সিটি বেসিস ব্যাসার্ধ "</string>
+    <string name="decline">"অস্বীকার করুন "</string>
+    <string name="send_request">"অনুরোধ পাঠান "</string>
+    <string name="todo" translatable="false">করণীয়</string>
+    <string name="i_am_here" translatable="false">"আমি এখানে "</string>
+</resources>
