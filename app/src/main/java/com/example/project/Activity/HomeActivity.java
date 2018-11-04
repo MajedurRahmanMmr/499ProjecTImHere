@@ -19,6 +19,8 @@ import android.widget.Toast;
 import com.example.project.DB.FireBaseDataHelper;
 import com.example.project.GPSTracker;
 import com.example.project.Model.CustomLocationWithTime;
+import com.example.project.Model.FirbitResponse.FitBitHeartRate;
+import com.example.project.NetworkManager;
 import com.example.project.R;
 import com.firebase.ui.auth.AuthUI;
 
@@ -38,6 +40,10 @@ import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
 import java.util.ArrayList;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class HomeActivity extends AppCompatActivity {
@@ -91,6 +97,19 @@ public class HomeActivity extends AppCompatActivity {
         new FireBaseDataHelper(this).setUserDataToDB();
 
         setActions();
+
+
+        new NetworkManager().getFitbitData("eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkQ1NzUiLCJzdWIiOiI2WTdKUTUiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJhY3QgcnNldCBybG9jIHJ3ZWkgcmhyIHJudXQgcnBybyByc2xlIiwiZXhwIjoxNTQxOTUwOTEwLCJpYXQiOjE1NDEzNDYyNjF9.5PTQwRgra4U8saT4xsK63FgkzWDqCS04t6u0fw8s_04").enqueue(new Callback<FitBitHeartRate>() {
+            @Override
+            public void onResponse(Call<FitBitHeartRate> call, Response<FitBitHeartRate> response) {
+                Log.e("Heart Beat ", response.body().toString());
+            }
+
+            @Override
+            public void onFailure(Call<FitBitHeartRate> call, Throwable t) {
+
+            }
+        });
 
     }
 
@@ -190,7 +209,7 @@ public class HomeActivity extends AppCompatActivity {
                 // All location settings are satisfied. The client can initialize
                 // location requests here.
                 // ...
-               // Toast.makeText(HomeActivity.this, " Location REsponse", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(HomeActivity.this, " Location REsponse", Toast.LENGTH_SHORT).show();
 
                 if (locationSettingsResponse.getLocationSettingsStates().isLocationPresent()) {
                     mFusedLocationClient = LocationServices.getFusedLocationProviderClient(HomeActivity.this);
@@ -245,8 +264,8 @@ public class HomeActivity extends AppCompatActivity {
 
     private void startLocationUpdates() {
         LocationRequest mLocationRequest = new LocationRequest();
-        mLocationRequest.setInterval(1000*5);
-        mLocationRequest.setFastestInterval(1000*5);
+        mLocationRequest.setInterval(1000 * 5);
+        mLocationRequest.setFastestInterval(1000 * 5);
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         mFusedLocationClient.requestLocationUpdates(mLocationRequest, mLocationCallback, null /* Looper */);
     }
